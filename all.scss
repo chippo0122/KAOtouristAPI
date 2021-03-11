@@ -1,0 +1,92 @@
+/*!
+ * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+// scss-docs-start import-stack
+// Configuration
+@import "helpers/bootstrap/scss/functions";
+@import "helpers/bootstrap/scss/variables";
+@import "helpers/bootstrap/scss/mixins";
+@import "helpers/bootstrap/scss/utilities";
+
+// Layout & components
+@import "helpers/bootstrap/scss/root";
+@import "helpers/bootstrap/scss/reboot";
+@import "helpers/bootstrap/scss/type";
+@import "helpers/bootstrap/scss/images";
+@import "helpers/bootstrap/scss/containers";
+@import "helpers/bootstrap/scss/card";
+@import "helpers/bootstrap/scss/grid";
+@import "helpers/bootstrap/scss/forms";
+@import "helpers/bootstrap/scss/buttons";
+@import "helpers/bootstrap/scss/list-group";
+@import "helpers/bootstrap/scss/pagination";
+// Helpers
+@import "helpers/bootstrap/scss/helpers";
+
+// Utilities
+@import "helpers/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+.jumbotron{
+    width: 100%;
+    height: 380px;
+    background: url(helpers/assets/the-urban-landscape-1698285.png);
+    background-position: center;
+    background-size: cover;
+}
+#select{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 0.5rem;
+}
+.hot-district{
+    width: 85%;
+    border-radius: 5px;
+    margin-top: -40px;
+    .hot-sec{
+        width: 100%;
+        display: flex;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+}
+.border{
+    width: 85%;
+    margin: 5rem auto;
+    border-top: 10px dotted #559AC8;
+    position: relative;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.output-list{
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 31%;
+    margin-top: 0.75rem;
+    @media(max-width: 1200px){
+        width: 49%;
+    }
+    @media(max-width: 768px){
+        width: 90%;
+    }
+}
+.card-body{
+    .icon{
+        width: 16px;
+        height: 18px;
+    }
+}
+.tour-spot{
+    top: -25%;
+}

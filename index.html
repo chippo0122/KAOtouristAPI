@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="jumbotron d-flex justify-content-center align-items-center">
+            <div class="col-8 col-md-4">
+                <h1 class="fs-1 text-light text-center mb-5">高雄旅遊資訊</h1>
+                <select class="form-select" name="select" id="select">
+                    <option value="0">--請選擇行政區--</option>
+                    <option value="前金區">前金區</option>
+                    <option value="左營區">左營區</option>
+                    <option value="楠梓區">楠梓區</option>
+                    <option value="鼓山區">鼓山區</option>
+                    <option value="旗津區">旗津區</option>
+                    <option value="苓雅區">苓雅區</option>
+                    <option value="三民區">三民區</option>
+                    <option value="前鎮區">前鎮區</option>
+                    <option value="小港區">小港區</option>
+                    <option value="鳳山區">鳳山區</option>
+                    <option value="仁武區">仁武區</option>
+                    <option value="大樹區">大樹區</option>
+                    <option value="岡山區">岡山區</option>
+                    <option value="梓官區">梓官區</option>
+                    <option value="田寮區">田寮區</option>
+                    <option value="茄萣區">茄萣區</option>
+                    <option value="茂林區">茂林區</option>
+                    <option value="六龜區">六龜區</option>
+                    <option value="美濃區">美濃區</option>
+                    <option value="甲仙區">甲仙區</option>
+                    <option value="內門區">內門區</option>
+                    <option value="杉林區">杉林區</option>
+                </select>
+            </div>
+        </div>
+        <div class="hot-district mx-auto bg-light py-3">
+            <h3 class="fs-4 text-secondary px-5 py-3">熱門行政區</h3>
+            <div class="hot-sec px-5">
+                <a href="#key" class="btn text-light w-100 m-1 d-block btn-indigo">大樹區</a>
+                <a href="#key" class="btn text-light w-100 m-1 d-block btn-pink">左營區</a>
+                <a href="#key" class="btn text-light w-100 m-1 d-block btn-yolk">岡山區</a>
+                <a href="#key" class="btn text-light w-100 m-1 d-block btn-sky">三民區</a>
+            </div>
+        </div>
+        <div class="border">
+            <img id="key" src="helpers/assets/icons_down.png" alt="">
+        </div>
+        <div class="main-sec pb-5">
+            <p class="district-top text-center text-indigo fs-1"></p>
+            <ul class="output-list list-unstyled d-flex">
+               
+            </ul>
+            <nav>
+                <ul class="pagination justify-content-center mt-5" data-list="check">
+                    <li class="page-item"><a class="page-link" data-page="1" href="#key">1</a></li>
+                    <li class="page-item"><a class="page-link" data-page="2" href="#key">2</a></li>
+                    <li class="page-item"><a class="page-link" data-page="3" href="#key">3</a></li>
+                    <li class="page-item"><a class="page-link" data-page="4" href="#key">4</a></li>
+                    <li class="page-item"><a class="page-link" data-page="5" href="#key">5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <footer class="bg-sky py-3">
+            <p class="text-center fs-3 text-light">高雄旅遊網</p>
+            <p class="text-center fs-5 text-yolk">資料來源: 高雄市政府</p>
+        </footer>
+    </div>
+    <script src="all.js"></script>
+</body>
+
+</html>
